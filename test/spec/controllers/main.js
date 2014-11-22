@@ -3,13 +3,13 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  //beforeEach(module('myToDoApp'));
+  beforeEach(module('myToDoApp'));
 
   var MainCtrl,
     scope;
 
   // Initialize the controller and a mock scope
-  /*beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
@@ -30,5 +30,5 @@ describe('Controller: MainCtrl', function () {
     scope.addToDo();
     scope.removeToDo(0);
     expect(scope.todos.length).toBe(0);
-  });*/
+  });
 });
